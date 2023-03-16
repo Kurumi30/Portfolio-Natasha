@@ -1,4 +1,4 @@
-import "./style.css"
+import "../public/style.css"
 import Typewriter from "./Typewriter"
 
 const typewriter = new Typewriter(
@@ -8,15 +8,18 @@ const typewriter = new Typewriter(
     typingSpeed: 50,
     deletingSpeed: 5,
   }
-);
+)
 
 typewriter
-  .typeString("Hello World!")
+  .typeString("Seja bem-vindo(a)!")
   .pauseFor(2000)
-  .typeString("\nI'm Fernando.")
+  .typeString("\nEste é o meu portfólio!")
   .pauseFor(1000)
   .deleteAll(100)
-  .typeString("Welcome to my Project!")
+  .typeString("Aqui, guardarei as atividades da Profª Natasha.")
   .pauseFor(1000)
+  .deleteAll(100)
+  .typeString("Clique no botão abaixo para acessar as atividades :)")
+  .pauseFor(2000)
   .deleteAll(100)
   .start()
